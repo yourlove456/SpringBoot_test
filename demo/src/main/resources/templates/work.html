@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>홈페이지 만들기</title>
+</head>
+<body>
+
+<div>
+<input type="checkbox" name="abc">A
+<input type="checkbox" name="abc">B
+<input type="checkbox" name="abc">C
+</div><br>
+
+<input type="text" th:value="${text}" > <br><br>
+
+<table border=1>
+ <thead align="center">
+  <tr> 
+   <td colspan="2">오전 (9:00~12:30)</td>
+   <td rowspan="2">점심 (12:30~13:30)</td>
+   <td colspan="2">오후 (13:30~18:30)</td>
+   <td rowspan="2" width="100">퇴근</td>
+  </tr>
+  <tr>
+   <td>과제</td>
+   <td>공부</td>
+   <td>공부</td>
+   <td>교육</td>
+  </tr>
+ </thead>
+ <tbody align="center">
+  <tr>
+   <td>어렵다</td>
+   <td>화이팅</td>
+   <td>배고프다</td>
+   <td>졸립다</td>
+   <td>눈이 초롱초롱</td>
+   <td>신난다</td>
+  </tr>
+ </tbody>
+</table> <br><br>
+
+<input type="button" value="눌러라" onclick="alert('잘했구나')"> <br><br>
+
+<a href="https://www.naver.com" target=_blank>www.naver.com</a> <br><br>
+
+
+<h3>27일 점심메뉴</h3>
+ <ul>
+  <li th:test="${menu1}"></li>
+ </ul>
+
+</body>
+</html>
